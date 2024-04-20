@@ -1,0 +1,12 @@
+.navbar {
+    background-color: #23DCC5; 
+    height: 60px; 
+}
+
+.container {
+    max-width: 100%; /* Ancho máximo del contenido del navbar */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+    padding: 0 15px; /* Espacio interno en los bordes del navbar */
+    display: flex; /* Usar flexbox para alinear el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+}

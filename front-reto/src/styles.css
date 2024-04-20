@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: "Fira Mono", monospace; /* Define la fuente predeterminada para el texto */
+    background-color: #f0f0f0; /* Color de fondo de la página */
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
