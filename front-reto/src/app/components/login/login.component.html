@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Iniciar sesión</h1>
+    <mat-form-field>
+        <label>Correo</label>
+        <input matInput
+                [formControl]="email"
+                (blur)="updateErrorMessage()"
+                required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <label>Contraseña</label>
+        <input matInput
+                [type]="'password'"
+                [formControl]="password"
+                (blur)="updateErrorMessage()"
+                required>
+    </mat-form-field>
+    @if (password.invalid || email.invalid) {
+        <mat-error>{{errorMessage}}</mat-error>
+        }
+    <button class="btn">Iniciar</button>
+</div>
