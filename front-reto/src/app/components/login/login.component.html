@@ -1,4 +1,4 @@
-<div class="container">
+<div class="login">
     <h1>Iniciar sesión</h1>
     <mat-form-field>
         <label>Correo</label>
@@ -7,7 +7,6 @@
                 (blur)="updateErrorMessage()"
                 required>
     </mat-form-field>
-
     <mat-form-field>
         <label>Contraseña</label>
         <input matInput
@@ -19,5 +18,5 @@
     @if (password.invalid || email.invalid) {
         <mat-error>{{errorMessage}}</mat-error>
         }
-    <button class="btn">Iniciar</button>
+    <button type="submit" class="btn" (click)="login()">Iniciar</button>
 </div>

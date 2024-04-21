@@ -33,4 +33,9 @@ export class LoginComponent {
     }
   }
 
+  login() {
+    console.log("correo"+this.email);
+    console.log("contraseña"+this.password);
+  }
+
 }
