@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import {MatTableModule} from '@angular/material/table';
 import { Info } from '../../interfaces/info';
-
+import {Dialog, DialogModule} from '@angular/cdk/dialog';
+import { RegisterComponent } from '../register/register.component';
 
 const ELEMENT_DATA: Info[] = [
   {position: 1, name: 'Hydrogen', run: 1.0079, lastname: 'H'},
@@ -19,7 +20,7 @@ const ELEMENT_DATA: Info[] = [
 @Component({
   selector: 'app-empleados',
   standalone: true,
-  imports: [MatTableModule],
+  imports: [MatTableModule, DialogModule],
   templateUrl: './empleados.component.html',
   styleUrl: './empleados.component.css'
 })
@@ -28,9 +29,13 @@ export class EmpleadosComponent {
   displayedColumns: string[] = ['demo-position', 'demo-name', 'demo-lastname', 'demo-run'];
   dataSource = ELEMENT_DATA;
   
-  register() {
-    alert('registrando');
-    console.log("aca todo bien")
+  constructor(public dialog: Dialog) {}
 
+  openDialog() {
+    console.log("aca todo bien")
+    this.dialog.open(RegisterComponent, {
+      minWidth: '300px',
+      maxWidth: '50%',
+    });
   }
 }

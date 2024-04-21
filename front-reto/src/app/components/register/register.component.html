@@ -1,1 +1,30 @@
-<p>register works!</p>
+<div class="register">
+    <button class="close" (click)="dialogRef.close()">X</button>
+    <h1>Añadir  un nuevo empleado</h1>
+    <mat-form-field>
+        <label>Nombre</label>
+        <input matInput
+                [formControl]="name"
+                (blur)="updateErrorMessage()"
+                required>
+    </mat-form-field>
+    <mat-form-field>
+        <label>Apellido</label>
+        <input matInput
+                [formControl]="lastname"
+                (blur)="updateErrorMessage()"
+                required>
+    </mat-form-field>
+    <mat-form-field>
+        <label>RUN</label>
+        <input matInput
+                placeholder="12.345.678-9"
+                [formControl]="run"
+                (blur)="updateErrorMessage()"
+                required>
+    </mat-form-field>
+    @if (name.invalid || lastname.invalid || run.invalid) {
+        <mat-error>{{errorMessage}}</mat-error>
+        }
+    <button type="submit" class="btn" (click)="register()">Guardar</button>
+</div>
