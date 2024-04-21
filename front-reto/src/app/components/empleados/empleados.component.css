@@ -1,0 +1,61 @@
+.demo-table {
+    width: 100%;
+    min-width: 30rem;
+    max-width: 90%;
+    margin: 0px auto;
+    padding: 2rem 3rem;
+    margin: auto;
+    border-radius: 2.5rem;
+    border-bottom:10px solid #23DCC5;
+    background-color: rgba(192, 95, 147, 0.23);
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+    color: black;
+    margin-top: 2rem;
+}
+
+.mat-column-demo-position {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-right: 24px;
+    text-align: center;
+}
+
+.mat-column-demo-name {
+    padding-left: 16px;
+    font-size: 20px;
+}
+
+.mat-column-demo-lastname {
+    padding-left: 16px;
+    font-size: 20px;
+}
+
+.mat-column-demo-run {
+    width: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.register{
+    float: right;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: none;
+    font-size: 0.875rem;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: rgba(187, 16, 108, 0.68);
+    width: 20%;
+    min-width: 10rem;
+    display: block;
+    padding: 0.875rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    cursor: pointer;
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+}
+h1 {
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
