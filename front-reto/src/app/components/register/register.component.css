@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+h1 {
+margin: 0;
+padding: 0;
+}
+.register {
+    position: fixed; /* Establece la posición fija */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Centra exactamente */
+    min-width: 30rem;
+    max-width: 40%;
+    margin: 0px auto;
+    padding: 2rem 3rem;
+    margin: auto;
+    border-radius: 2.5rem;
+    background-color: white;
+    border-bottom:10px solid #23DCC5;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+    color: black;
+    margin-top: 2rem;
+    z-index: 9999; /* Asegura que esté encima de otros elementos */
+}
+.register > * {
+    margin-bottom: 1rem; /* Espacio entre los elementos */
+}
+mat-form-field{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+mat-form-field input {
+    display: block;
+    margin: 2rem 0;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px
+        rgba(0, 0, 0, 0.1);
+    border: 0 none;
+    background: #ebf5fc;
+}
+mat-error{
+    color: red !important;
+}
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: none;
+    font-size: 0.875rem;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: rgba(187, 16, 108, 0.68);
+    width: 100%;
+    display: block;
+    padding: 0.875rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    cursor: pointer;
+}
+.close{
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #BB106C;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.register mat-form-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Color del placeholder más claro */
+}
