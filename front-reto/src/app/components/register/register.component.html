@@ -1,21 +1,21 @@
 <div class="register">
     <button class="close" (click)="dialogRef.close()">X</button>
     <h1>Añadir  un nuevo empleado</h1>
-    <mat-form-field>
+    <mat-form-field class="inputs">
         <label>Nombre</label>
         <input matInput
                 [formControl]="name"
                 (blur)="updateErrorMessage()"
                 required>
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field class="inputs">
         <label>Apellido</label>
         <input matInput
                 [formControl]="lastname"
                 (blur)="updateErrorMessage()"
                 required>
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field class="inputs">
         <label>RUN</label>
         <input matInput
                 placeholder="12.345.678-9"
@@ -26,5 +26,5 @@
     @if (name.invalid || lastname.invalid || run.invalid) {
         <mat-error>{{errorMessage}}</mat-error>
         }
-    <button type="submit" class="btn" (click)="register()">Guardar</button>
+    <button type="submit" class="btn" [disabled]="name.invalid || lastname.invalid || run.invalid" (click)="register()">Guardar</button>
 </div>

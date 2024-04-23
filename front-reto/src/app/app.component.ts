@@ -8,7 +8,7 @@ import { LoginComponent } from './components/login/login.component';
   standalone: true,
   imports: [RouterOutlet,NavbarComponent,LoginComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'front-reto';
