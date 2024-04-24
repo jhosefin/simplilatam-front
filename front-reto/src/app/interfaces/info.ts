@@ -1,7 +1,7 @@
 export interface Info {
-    position: number;
-    name: string;
-    lastname: string;
+    id: number;
+    nombre: string;
+    apellido: string;
     run: number;
 }
 export interface Empleado{

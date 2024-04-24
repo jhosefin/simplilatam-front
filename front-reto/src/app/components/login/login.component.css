@@ -31,18 +31,16 @@ mat-form-field{
 
 mat-form-field input {
     display: block;
-    margin: 2rem 0;
     width: 100%;
     border-radius: 0.5rem;
     padding: 1rem;
     border: none;
     box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px
         rgba(0, 0, 0, 0.1);
-    border: 0 none;
-    background: #ebf5fc;
 }
 mat-error{
     color: red !important;
+    margin: 1rem;
 }
 .btn {
     text-transform: uppercase;

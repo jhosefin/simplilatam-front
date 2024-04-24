@@ -3,6 +3,7 @@
     <mat-form-field>
         <label>Correo</label>
         <input matInput
+                placeholder="example@example.com"
                 [formControl]="email"
                 (blur)="updateErrorMessage()"
                 required>
@@ -10,6 +11,7 @@
     <mat-form-field>
         <label>Contraseña</label>
         <input matInput
+                placeholder="xxxx"
                 [type]="'password'"
                 [formControl]="password"
                 (blur)="updateErrorMessage()"
