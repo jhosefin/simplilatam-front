@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://api.dev.api-arrayan.cl/api",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
