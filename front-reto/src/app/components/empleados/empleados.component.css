@@ -31,9 +31,8 @@
 }
 
 .mat-column-demo-run {
-    width: 32px;
+    font-size: 20px;
     text-align: center;
-    font-weight: bold;
 }
 
 .register{
@@ -58,4 +57,8 @@
 h1 {
     margin-left: 5rem;
     margin-top: 1rem;
+}
+.mat-mdc-header-row{
+    font-weight: bold;
+    color: #BB106C;
 }
