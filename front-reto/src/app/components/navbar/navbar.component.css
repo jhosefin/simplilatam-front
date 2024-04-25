@@ -8,5 +8,12 @@
     margin: 0 auto; /* Centrar el contenido horizontalmente */
     padding: 0 15px; /* Espacio interno en los bordes del navbar */
     display: flex; /* Usar flexbox para alinear el contenido */
-    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: space-between; /* Justificar el contenido a lo ancho entre las columnas */
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+    font-size: 3rem;
+    background-color: transparent;
+    color: #BB106C;
 }

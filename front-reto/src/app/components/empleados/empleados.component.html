@@ -1,5 +1,6 @@
 <h1>Empleados</h1>
 <button class="register" type="submit" (click)="openDialog()">+  Añadir  Empleado</button>
+<div class="table-container">
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
     <!-- @for (empleado of dataSource; track $index) { -->
     <!-- Position Column -->
@@ -30,3 +31,4 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     <!-- } -->
 </table>
+</div>
