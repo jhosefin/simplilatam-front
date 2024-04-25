@@ -12,6 +12,13 @@
     color: black;
     margin-top: 2rem;
 }
+.table-container {
+    width: 100%;
+    min-width: 30rem;
+    max-width: 90%;
+    max-height: 400px; /* Altura máxima de la tabla */
+    overflow-y: auto; /* Hacer que se muestre una barra de desplazamiento vertical si es necesario */
+}
 
 .mat-column-demo-position {
     width: 32px;

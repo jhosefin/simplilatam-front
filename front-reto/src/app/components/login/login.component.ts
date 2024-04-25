@@ -36,12 +36,9 @@ export class LoginComponent {
   }
 
   async login() {
-    console.log("correo"+this.email.value);
-    console.log("contraseña"+this.password.value);
     const response = await this.empleadosService.login(this.email.value, this.password.value);
-    console.log(response);
     if(!response.error){
-      localStorage.setItem("token", response.token);
+      this.empleadosService.setItem("token", response.token);
       this.router.navigate(['/employee/']);
     }
   }
